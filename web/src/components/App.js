@@ -24,10 +24,10 @@ export default function App() {
   let current = "home";
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/PersonalReactWeb1">
       <Nav />
       <div className="container-fluid" id="appMargin">
-        <Routes basename="/PersonalReactWeb1">
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
