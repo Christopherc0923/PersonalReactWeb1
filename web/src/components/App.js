@@ -27,7 +27,7 @@ export default function App() {
     <BrowserRouter>
       <Nav />
       <div className="container-fluid" id="appMargin">
-        <Routes>
+        <Routes basename="/PersonalReactWeb1">
           <Route path="/" element={<Home />} />
           <Route path="About" element={<About />} />
           <Route path="Contact" element={<Contact />} />
@@ -42,7 +42,7 @@ export default function App() {
           <Route path="IntelAbortML" element={<AbortML />} />
           <Route path="SimpleReactApp" element={<SimpleReactApp />} />
           <Route path="MLProj" element={<MLProj />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/PersonalReactWeb1" element={<Home />} />
         </Routes>
       </div>
       <BackToTop />
