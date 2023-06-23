@@ -29,19 +29,19 @@ export default function App() {
       <div className="container-fluid" id="appMargin">
         <Routes basename="/PersonalReactWeb1">
           <Route path="/" element={<Home />} />
-          <Route path="About" element={<About />} />
-          <Route path="Contact" element={<Contact />} />
-          <Route path="Music" element={<Music />} />
-          <Route path="IBM" element={<IBM />} />
-          <Route path="Stock" element={<Stock />} />
-          <Route path="StockEarnings" element={<StockEarnings />} />
-          <Route path="Weather" element={<Weather />} />
-          <Route path="Expense" element={<ExpenseForm />} />
-          <Route path="Leetcode" element={<Leetcode />} />
-          <Route path="IntelModuleWeb" element={<WebsiteRestructure />} />
-          <Route path="IntelAbortML" element={<AbortML />} />
-          <Route path="SimpleReactApp" element={<SimpleReactApp />} />
-          <Route path="MLProj" element={<MLProj />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Music" element={<Music />} />
+          <Route path="/IBM" element={<IBM />} />
+          <Route path="/Stock" element={<Stock />} />
+          <Route path="/StockEarnings" element={<StockEarnings />} />
+          <Route path="/Weather" element={<Weather />} />
+          <Route path="/Expense" element={<ExpenseForm />} />
+          <Route path="/Leetcode" element={<Leetcode />} />
+          <Route path="/IntelModuleWeb" element={<WebsiteRestructure />} />
+          <Route path="/IntelAbortML" element={<AbortML />} />
+          <Route path="/SimpleReactApp" element={<SimpleReactApp />} />
+          <Route path="/MLProj" element={<MLProj />} />
           <Route path="/PersonalReactWeb1" element={<Home />} />
         </Routes>
       </div>
