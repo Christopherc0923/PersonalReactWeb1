@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../css/global.css";
 
-export default function ProjectItem2(props) {
+export default function ProjectItem(props) {
   const itemStyle = {
     height: "AUTO",
     padding: "20px",

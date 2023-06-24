@@ -2,7 +2,7 @@ import React from "react";
 
 import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 
-import About from "./pages/About";
+import About from "./pages/about/About";
 import Contact from "./pages/contactform/Contact";
 import Nav from "./universal/Nav";
 import Home from "./pages/Home";

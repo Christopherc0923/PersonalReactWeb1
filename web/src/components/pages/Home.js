@@ -4,6 +4,7 @@ import Contact from "./contactform/Contact";
 import { Link } from "react-router-dom";
 import Skill from "./skills/Skill";
 import WordChange from "./misc/wordChange";
+import Cert from "./cert/Cert";
 
 export default function About() {
   return (
@@ -48,6 +49,8 @@ export default function About() {
       <Skill />
       <hr />
       <Project />
+      <hr />
+      <Cert />
       <hr />
       <Contact />
     </div>
