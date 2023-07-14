@@ -1,6 +1,11 @@
 import React from "react";
-import SkillList from "./SkillList";
 
+import SkillList from "./SkillList";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+library.add(fab, fas); // Add the required icon packs to the library
 export default function Skill() {
   const programmingLanguages = ["C++", "JavaScript", "Python", "R"];
   const webDevelopment = [
@@ -11,6 +16,7 @@ export default function Skill() {
     "HTML/CSS",
     "NodeJS",
     "ReactJS",
+    "Stripe",
   ];
   const dataAnalysis = ["Excel", "JMP", "PowerBI", "STATA"];
   const databases = ["MongoDB", "SQL", "Toad"];

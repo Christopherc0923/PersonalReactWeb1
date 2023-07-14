@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import Skill from "./skills/Skill";
 import WordChange from "./misc/wordChange";
 import Cert from "./cert/Cert";
+import JumpButton from "./jumpButton";
+import Timeline from "./timeline/timeline";
 
 export default function About() {
   return (
@@ -19,8 +21,9 @@ export default function About() {
         >
           <WordChange />
 
-          <h3>I'm Christopher Chan a Process Engineer at Intel</h3>
-          <p>
+          <h3 className="m-1">I'm Christopher Chan</h3>
+          <h3 className="m-1">Process Engineer at Intel</h3>
+          <p className="m-1">
             I am open to opportunities in data science and backend software
             development
           </p>
@@ -29,19 +32,12 @@ export default function About() {
               className="btn btn-outline-primary"
               style={{ margin: "3px", width: "135px" }}
             >
-              <Link to="/about" className="nav-link">
+              <Link to="/about" className="no-color">
                 About Me
               </Link>
             </button>
 
-            <button
-              className="btn btn-outline-primary"
-              style={{ margin: "5px", width: "135px" }}
-            >
-              <Link to="/contact" className="nav-link">
-                Contact
-              </Link>
-            </button>
+            <JumpButton />
           </div>
         </div>
       </div>

@@ -13,8 +13,8 @@ export default function DownloadButton() {
   };
 
   return (
-    <button className="btn btn-success" onClick={handleDownload}>
-      Download
+    <button className="btn btn-success m-3" onClick={handleDownload}>
+      Download Resume
     </button>
   );
 }

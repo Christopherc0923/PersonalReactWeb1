@@ -23,7 +23,7 @@ export const ProjectList = [
     title: "Nothing Shop",
     description:
       "The website is an online shop that focuses on offering a curated selection of just one product, embodying the principles of minimalism. Their philosophy revolves around the idea that simplicity and elegance can go hand in hand, and that a single remarkable item can make a statement and enhance one's lifestyle. Each item in their collection is meticulously chosen to showcase minimalistic design, functionality, and quality. The website encourages a clutter-free lifestyle and aims to provide customers with a unique shopping experience centered around the beauty and essence of one exceptional product.",
-    skill: "Bootstrap, HTML/CSS, JavaScript, ReactJS",
+    skill: "Bootstrap, HTML/CSS, JavaScript, ReactJS, Express, NodeJS, Stripe",
     img: "nothingShop.png",
     page: "",
     url: "https://christopherc0923.github.io/React-Projs/",

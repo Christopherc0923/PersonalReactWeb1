@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Document, Page, pdfjs } from "react-pdf";
 import DownloadButton from "./Download";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
@@ -8,11 +9,6 @@ export default function About() {
 
   return (
     <div className="container text-center">
-      <h1>Resume</h1>
-      <hr />
-      <div className="container">
-        <DownloadButton />
-      </div>
       <div>
         <Document
           className="d-flex justify-content-center"
@@ -30,6 +26,15 @@ export default function About() {
             height={pgheight}
           />
         </Document>
+      </div>
+      <hr />
+      <div className="container">
+        <DownloadButton />
+        <button className="btn btn-success m-3">
+          <Link to="/" className="no-color">
+            Contact Me
+          </Link>
+        </button>
       </div>
     </div>
   );

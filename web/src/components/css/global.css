@@ -45,3 +45,7 @@
     margin-top: 100px; /* Height for smaller screens */
   }
 }
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}

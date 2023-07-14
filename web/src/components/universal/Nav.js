@@ -18,6 +18,24 @@ export default function Nav() {
 
   */
   }
+  const [isOpen1, setIsOpen1] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
+
+  const handleMouseEnter1 = () => {
+    setIsOpen1(true);
+  };
+
+  const handleMouseLeave1 = () => {
+    setIsOpen1(false);
+  };
+
+  const handleMouseEnter2 = () => {
+    setIsOpen2(true);
+  };
+
+  const handleMouseLeave2 = () => {
+    setIsOpen2(false);
+  };
 
   return (
     <div>
@@ -56,16 +74,60 @@ export default function Nav() {
                   </Link>
                 </li>
 
-                <li className="nav-item">
-                  <Link to="/SimpleReactApp" className="nav-link">
-                    Simple React Apps
-                  </Link>
+                <li
+                  className="nav-item dropdown"
+                  onMouseEnter={handleMouseEnter1}
+                  onMouseLeave={handleMouseLeave1}
+                >
+                  <a
+                    className="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded={isOpen1 ? "true" : "false"}
+                  >
+                    <Link to="/SimpleReactApp" className="no-color">
+                      Simple React Apps
+                    </Link>
+                  </a>
+                  <div
+                    className={`dropdown-menu ${isOpen1 ? "show" : ""}`}
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <a className="dropdown-item" href="#">
+                      Action 1
+                    </a>
+                  </div>
                 </li>
 
-                <li className="nav-item">
-                  <Link to="/MLProj" className="nav-link">
-                    ML Projects
-                  </Link>
+                <li
+                  className="nav-item dropdown"
+                  onMouseEnter={handleMouseEnter2}
+                  onMouseLeave={handleMouseLeave2}
+                >
+                  <a
+                    className="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded={isOpen2 ? "true" : "false"}
+                  >
+                    <Link to="/MLProj" className="no-color">
+                      ML Projects
+                    </Link>
+                  </a>
+                  <div
+                    className={`dropdown-menu ${isOpen2 ? "show" : ""}`}
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <a className="dropdown-item" href="#">
+                      Action 1
+                    </a>
+                  </div>
                 </li>
               </ul>
             </div>

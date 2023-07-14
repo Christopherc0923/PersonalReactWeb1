@@ -10,7 +10,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="container text-center row">
+    <div className="container text-center row" id="jump">
       <div className="col-md-4 d-flex align-items-center justify-content-center">
         <h1 className="text-center">Contact Us</h1>
       </div>
