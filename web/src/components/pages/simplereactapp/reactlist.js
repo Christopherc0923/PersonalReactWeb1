@@ -1,9 +1,30 @@
+export const FilterSkills = [
+  "API",
+  "Bootstrap",
+  "ChartJS",
+  "Express",
+  "HTML",
+  "CSS",
+  "MongoDB",
+  "ReactJS",
+  "JavaScript",
+];
+
 export const ReactList = [
   {
     title: "Personal Expense Tracker",
     description:
       "During my spare time, I channeled my passion for web development by building this personal website using a combination of frontend and backend technologies",
-    skill: "Bootstrap, ChartJS, Express HTML/CSS, MongoDB, ReactJS",
+    skills: [
+      "Bootstrap",
+      "ChartJS",
+      "Express",
+      "HTML",
+      "CSS",
+      "MongoDB",
+      "ReactJS",
+      "JavaScript",
+    ],
     img: "Expense.png",
     page: "Expense",
     url: "",
@@ -13,7 +34,15 @@ export const ReactList = [
     title: "LeetCode Question Tracker",
     description:
       "This capstone project aims to use various machine learning models to predict the likelihood of a successful landing for SpaceX's Falcon 9 launch. ",
-    skill: "Bootstrap, Express, HTML/CSS, MongoDB, ReactJS",
+    skills: [
+      "Bootstrap",
+      "Express",
+      "HTML",
+      "CSS",
+      "MongoDB",
+      "ReactJS",
+      "JavaScript",
+    ],
     img: "Leetcode.png",
     page: "Leetcode",
     url: "",
@@ -23,7 +52,15 @@ export const ReactList = [
     title: "Weather App",
     description:
       "This capstone project aims to use various machine learning models to predict the likelihood of a successful landing for SpaceX's Falcon 9 launch. ",
-    skill: "API, Bootstrap, ChartJS, HTML/CSS, ReactJS",
+    skills: [
+      "API",
+      "Bootstrap",
+      "ChartJS",
+      "HTML",
+      "CSS",
+      "ReactJS",
+      "JavaScript",
+    ],
     img: "Weather.png",
     page: "Weather",
     url: "",
@@ -33,7 +70,15 @@ export const ReactList = [
     title: "Stock App",
     description:
       "This capstone project aims to use various machine learning models to predict the likelihood of a successful landing for SpaceX's Falcon 9 launch. ",
-    skill: "API, Bootstrap, ChartJS, HTML/CSS, ReactJS",
+    skills: [
+      "API",
+      "Bootstrap",
+      "ChartJS",
+      "HTML",
+      "CSS",
+      "ReactJS",
+      "JavaScript",
+    ],
     img: "Stock.png",
     page: "stockEarnings",
     url: "",

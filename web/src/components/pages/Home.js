@@ -13,7 +13,7 @@ export default function About() {
     <div className="container">
       <div
         className="d-flex align-items-center text-center"
-        style={{ height: "100vh" }}
+        style={{ height: "85vh" }}
       >
         <div
           className="container d-flex flex-column align-items-center justify-content-center h-100"

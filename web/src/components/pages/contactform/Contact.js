@@ -11,10 +11,14 @@ export default function Contact() {
 
   return (
     <div className="container text-center row" id="jump">
-      <div className="col-md-4 d-flex align-items-center justify-content-center">
-        <h1 className="text-center">Contact Us</h1>
+      <div className="container-fluid col-lg-4 d-flex flex-column align-items-center justify-content-center">
+        <h3 className="text-center">Contact Us</h3>
+        <p className="text-center">
+          This functionality will not work on github pages cannot connect to
+          MongoDB
+        </p>
       </div>
-      <div className="form col-md-8">
+      <div className="form col-lg-8">
         <Form addData={addData} />
       </div>
     </div>

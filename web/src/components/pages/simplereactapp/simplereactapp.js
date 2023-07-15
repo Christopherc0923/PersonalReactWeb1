@@ -1,6 +1,7 @@
 import React from "react";
 import ReactItem from "./reactitem";
 import { ReactList } from "./reactlist";
+import ReactFilter from "./reactFilter";
 
 export default function SimpleReactApp() {
   return (
@@ -8,19 +9,17 @@ export default function SimpleReactApp() {
       <div className="header">
         <h1 className="text-center">Simple React Applications</h1>
       </div>
-      <div className="">
+
+      <div className="container">
         <p>
-          The objective of these simple projects to gain exposure of MERN and
-          API requests
+          {" "}
+          The objective of these simples projects is to gain exposure to MERN
+          tech stack and pull AP
         </p>
       </div>
 
-      <div className="row">
-        {ReactList.map((product, index) => (
-          <div className="" key={index}>
-            <ReactItem data={product} />
-          </div>
-        ))}
+      <div>
+        <ReactFilter />
       </div>
     </div>
   );

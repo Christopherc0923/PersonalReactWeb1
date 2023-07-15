@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function ReactItem(props) {
-  const { title, description, skill, img, page, url, isExternal } = props.data;
+  const { title, description, skills, img, page, url, isExternal } = props.data;
 
   return (
     <div className="container">
@@ -45,7 +45,10 @@ export default function ReactItem(props) {
           <h5> Objective </h5>
           <p className="text-justify">{description.slice(0, 300)}</p>
           <h5> Skills </h5>
-          <p style={{ height: "50px" }}>{skill}</p>
+
+          {skills.map((skill) => (
+            <li>{skill}</li>
+          ))}
         </div>
       </div>
     </div>

@@ -97,7 +97,24 @@ export default function Nav() {
                     aria-labelledby="navbarDropdown"
                   >
                     <a className="dropdown-item" href="#">
-                      Action 1
+                      <Link to="/MLProj" className="no-color">
+                        Expense Tracker
+                      </Link>
+                    </a>
+                    <a className="dropdown-item" href="#">
+                      <Link to="/MLProj" className="no-color">
+                        LeetCode Tracker
+                      </Link>
+                    </a>
+                    <a className="dropdown-item" href="#">
+                      <Link to="/MLProj" className="no-color">
+                        Weather App
+                      </Link>
+                    </a>
+                    <a className="dropdown-item" href="#">
+                      <Link to="/MLProj" className="no-color">
+                        Stock App
+                      </Link>
                     </a>
                   </div>
                 </li>
@@ -125,7 +142,19 @@ export default function Nav() {
                     aria-labelledby="navbarDropdown"
                   >
                     <a className="dropdown-item" href="#">
-                      Action 1
+                      <Link to="/MLProj" className="no-color">
+                        ML Proj 1
+                      </Link>
+                    </a>
+                    <a className="dropdown-item" href="#">
+                      <Link to="/MLProj" className="no-color">
+                        ML Proj 1
+                      </Link>
+                    </a>
+                    <a className="dropdown-item" href="#">
+                      <Link to="/MLProj" className="no-color">
+                        ML Proj 1
+                      </Link>
                     </a>
                   </div>
                 </li>
