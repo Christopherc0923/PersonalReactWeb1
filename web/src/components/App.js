@@ -26,7 +26,7 @@ export default function App() {
   return (
     <BrowserRouter basename="/PersonalReactWeb1">
       <Nav />
-      <div className="container-fluid" id="appMargin">
+      <div id="appMargin">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />

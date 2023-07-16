@@ -12,6 +12,7 @@ export const FilterSkills = [
 
 export const ReactList = [
   {
+    id: 1,
     title: "Personal Expense Tracker",
     description:
       "During my spare time, I channeled my passion for web development by building this personal website using a combination of frontend and backend technologies",
@@ -31,6 +32,7 @@ export const ReactList = [
     isExternal: "false",
   },
   {
+    id: 2,
     title: "LeetCode Question Tracker",
     description:
       "This capstone project aims to use various machine learning models to predict the likelihood of a successful landing for SpaceX's Falcon 9 launch. ",
@@ -49,6 +51,7 @@ export const ReactList = [
     isExternal: "false",
   },
   {
+    id: 3,
     title: "Weather App",
     description:
       "This capstone project aims to use various machine learning models to predict the likelihood of a successful landing for SpaceX's Falcon 9 launch. ",
@@ -67,6 +70,7 @@ export const ReactList = [
     isExternal: "false",
   },
   {
+    id: 4,
     title: "Stock App",
     description:
       "This capstone project aims to use various machine learning models to predict the likelihood of a successful landing for SpaceX's Falcon 9 launch. ",

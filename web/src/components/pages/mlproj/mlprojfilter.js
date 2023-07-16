@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { ReactList } from "./reactlist";
-import { FilterSkills } from "./reactlist";
-import ReactItem from "./reactitem";
+import { MLProjList } from "./mlprojlist";
+import { MLFilterSkills } from "./mlprojlist";
+import MLProjItem from "./mlprojitem";
 
-const skills = FilterSkills;
+const skills = MLFilterSkills;
 
-export default function ReactFilter() {
-  const [filteredProjects, setFilteredProjects] = useState(ReactList);
+export default function MLProjFilter() {
+  const [filteredProjects, setFilteredProjects] = useState(MLProjList);
   const [selectedSkills, setSelectedSkills] = useState([]);
 
   const handleSkillSelection = (skill) => {
@@ -20,7 +20,7 @@ export default function ReactFilter() {
   };
 
   useEffect(() => {
-    const filtered = ReactList.filter((project) =>
+    const filtered = MLProjList.filter((project) =>
       selectedSkills.every((skill) => project.skills.includes(skill))
     );
     setFilteredProjects(filtered);
@@ -47,7 +47,7 @@ export default function ReactFilter() {
       <div className="row">
         {filteredProjects.map((product, id) => (
           <div className="" key={id}>
-            <ReactItem data={product} />
+            <MLProjItem data={product} />
           </div>
         ))}
       </div>

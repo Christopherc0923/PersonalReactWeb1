@@ -97,22 +97,22 @@ export default function Nav() {
                     aria-labelledby="navbarDropdown"
                   >
                     <a className="dropdown-item" href="#">
-                      <Link to="/MLProj" className="no-color">
+                      <Link to="/Expense" className="no-color">
                         Expense Tracker
                       </Link>
                     </a>
                     <a className="dropdown-item" href="#">
-                      <Link to="/MLProj" className="no-color">
+                      <Link to="/Leetcode" className="no-color">
                         LeetCode Tracker
                       </Link>
                     </a>
                     <a className="dropdown-item" href="#">
-                      <Link to="/MLProj" className="no-color">
+                      <Link to="/Weather" className="no-color">
                         Weather App
                       </Link>
                     </a>
                     <a className="dropdown-item" href="#">
-                      <Link to="/MLProj" className="no-color">
+                      <Link to="/stockEarnings" className="no-color">
                         Stock App
                       </Link>
                     </a>
