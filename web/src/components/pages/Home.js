@@ -6,15 +6,12 @@ import Skill from "./skills/Skill";
 import WordChange from "./misc/wordChange";
 import Cert from "./cert/Cert";
 import JumpButton from "./jumpButton";
-import Timeline from "./timeline/timeline";
+import IntersectionObserverComponent from "./misc/intersectionobserver";
 
 export default function About() {
   return (
-    <div className="container">
-      <div
-        className="d-flex align-items-center text-center"
-        style={{ height: "85vh" }}
-      >
+    <div className="container-fluid ">
+      <IntersectionObserverComponent style={{ height: "100vh" }}>
         <div
           className="container d-flex flex-column align-items-center justify-content-center h-100"
           id=""
@@ -40,15 +37,31 @@ export default function About() {
             <JumpButton />
           </div>
         </div>
-      </div>
+      </IntersectionObserverComponent>
+
       <hr />
-      <Skill />
+
+      <IntersectionObserverComponent style={{ height: "100vh" }}>
+        <Skill />
+      </IntersectionObserverComponent>
+
       <hr />
-      <Project />
+
+      <IntersectionObserverComponent style={{ height: "100vh" }}>
+        <Project />
+      </IntersectionObserverComponent>
+
       <hr />
-      <Cert />
+
+      <IntersectionObserverComponent style={{ height: "100vh" }}>
+        <Cert />
+      </IntersectionObserverComponent>
+
       <hr />
-      <Contact />
+
+      <IntersectionObserverComponent style={{ height: "100vh" }}>
+        <Contact />
+      </IntersectionObserverComponent>
     </div>
   );
 }

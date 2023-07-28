@@ -1,0 +1,12 @@
+.hidden1 {
+  /* Add your initial hidden styles here */
+  opacity: 0;
+  transform: translateY(20px); /* Optional: For animating the appearance */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Optional: For animation */
+}
+
+/* Styles for the show class */
+.hidden1.show {
+  opacity: 1;
+  transform: translateY(0); /* Optional: For animating the appearance */
+}

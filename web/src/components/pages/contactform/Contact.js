@@ -10,7 +10,11 @@ export default function Contact() {
   };
 
   return (
-    <div className="container text-center row" id="jump">
+    <div
+      className="container-fluid row text-center"
+      style={{ width: "80%" }}
+      id="jump"
+    >
       <div className="container-fluid col-lg-4 d-flex flex-column align-items-center justify-content-center">
         <h3 className="text-center">Contact Us</h3>
         <p className="text-center">
