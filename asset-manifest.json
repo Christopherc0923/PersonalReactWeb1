@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/PersonalReactWeb1/static/css/main.4f2caa32.css",
-    "main.js": "/PersonalReactWeb1/static/js/main.c6a6cb8a.js",
+    "main.css": "/PersonalReactWeb1/static/css/main.30b97ede.css",
+    "main.js": "/PersonalReactWeb1/static/js/main.15e80a64.js",
     "static/media/Resume.pdf": "/PersonalReactWeb1/static/media/Resume.e9f48772bd755a50f9b6.pdf",
+    "static/media/wave1.svg": "/PersonalReactWeb1/static/media/wave1.7abc0fe5f9fc61aff455.svg",
+    "static/media/wave2.svg": "/PersonalReactWeb1/static/media/wave2.230c353914a2a044d85d.svg",
     "index.html": "/PersonalReactWeb1/index.html",
-    "main.4f2caa32.css.map": "/PersonalReactWeb1/static/css/main.4f2caa32.css.map",
-    "main.c6a6cb8a.js.map": "/PersonalReactWeb1/static/js/main.c6a6cb8a.js.map"
+    "main.30b97ede.css.map": "/PersonalReactWeb1/static/css/main.30b97ede.css.map",
+    "main.15e80a64.js.map": "/PersonalReactWeb1/static/js/main.15e80a64.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f2caa32.css",
-    "static/js/main.c6a6cb8a.js"
+    "static/css/main.30b97ede.css",
+    "static/js/main.15e80a64.js"
   ]
 }
