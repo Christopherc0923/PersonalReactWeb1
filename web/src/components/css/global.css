@@ -37,12 +37,12 @@
 }
 
 #appMargin {
-  margin-top: 150px;
+  margin-top: 125px;
 }
 
 @media screen and (min-width: 1000px) {
   #appMargin {
-    margin-top: 100px; /* Height for smaller screens */
+    margin-top: 50px; /* Height for smaller screens */
   }
 }
 

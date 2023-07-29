@@ -31,32 +31,32 @@ export default function Skill() {
       </div>
       <div className="container row ">
         <div className="col-lg-3">
-          <div className="row">
-            <h5>Programming Languages:</h5>
+          <div className="row d-flex justify-content-center">
+            <h5>Programming Languages</h5>
           </div>
           <div className="row">
             <SkillList items={programmingLanguages} />
           </div>
         </div>
         <div className="col-lg-3">
-          <div className="row">
-            <h5>Web Development:</h5>
+          <div className="row d-flex justify-content-center">
+            <h5>Web Development</h5>
           </div>
           <div className="row">
             <SkillList items={webDevelopment} />
           </div>
         </div>
         <div className="col-lg-3">
-          <div className="row">
-            <h5>Data Analysis and Visualization:</h5>
+          <div className="row d-flex justify-content-center">
+            <h5>Data Analysis and Visualization</h5>
           </div>
           <div className="row">
             <SkillList items={dataAnalysis} />
           </div>
         </div>
         <div className="col-lg-3">
-          <div className="row">
-            <h5>Databases:</h5>
+          <div className="row d-flex justify-content-center">
+            <h5>Databases</h5>
           </div>
           <div className="row">
             <SkillList items={databases} />

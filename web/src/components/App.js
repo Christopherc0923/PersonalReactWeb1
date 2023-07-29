@@ -26,7 +26,7 @@ export default function App() {
   return (
     <BrowserRouter basename="/PersonalReactWeb1">
       <Nav />
-      <div id="appMargin">
+      <div id="appMargin" className="container-fluid" style={{ padding: "0" }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
@@ -46,7 +46,9 @@ export default function App() {
         </Routes>
       </div>
       <BackToTop />
-      <Footer />
+      <div style={{ padding: "0", backgroundColor: "#e1e1e1" }}>
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }

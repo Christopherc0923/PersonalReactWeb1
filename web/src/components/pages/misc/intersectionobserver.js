@@ -30,17 +30,18 @@ const IntersectionObserverComponent = ({ children }) => {
   }, []);
 
   const containerStyle = {
-    height: "80vh",
+    height: "100vh",
     opacity: isVisible ? 1 : 0,
     transform: `translateY(${isVisible ? "0" : "20px"})`,
     transition: "all 3s",
+    padding: "0",
   };
 
   return (
     <div
       ref={targetRef}
       style={containerStyle}
-      className="container d-flex align-items-center text-center"
+      className="container-fluid d-flex align-items-center text-center "
     >
       {children}
     </div>

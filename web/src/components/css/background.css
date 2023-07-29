@@ -1,0 +1,14 @@
+.spacer {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url(./wave1.svg);
+}
+
+.layer2 {
+  background-image: url(./wave2.svg);
+}
