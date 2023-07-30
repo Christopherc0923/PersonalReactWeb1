@@ -5,7 +5,7 @@ import "./Project.css";
 
 export default function Project() {
   return (
-    <div className="container">
+    <div className="container ">
       <h3 className="text-center m-3">My Personal Projects</h3>
 
       <div

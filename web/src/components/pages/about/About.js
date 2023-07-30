@@ -1,3 +1,4 @@
+import "../../css/background.css";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Document, Page, pdfjs } from "react-pdf";
@@ -8,8 +9,22 @@ export default function About() {
   const pgheight = 1000;
 
   return (
-    <div className="container text-center">
-      <div>
+    <div
+      className="container-fluid text-center spacer layer2"
+      style={{ padding: "0px" }}
+    >
+      <div style={{ paddingTop: "20px" }}>
+        <h2>My Resume</h2>
+      </div>
+      <div className="container-fluid" style={{ padding: "20px" }}>
+        <DownloadButton />
+        <button className="btn btn-success m-3">
+          <Link to="/" className="no-color">
+            Contact Me
+          </Link>
+        </button>
+      </div>
+      <div style={{ padding: "20px" }}>
         <Document
           className="d-flex justify-content-center"
           file="Resume.pdf"
@@ -26,15 +41,6 @@ export default function About() {
             height={pgheight}
           />
         </Document>
-      </div>
-      <hr />
-      <div className="container">
-        <DownloadButton />
-        <button className="btn btn-success m-3">
-          <Link to="/" className="no-color">
-            Contact Me
-          </Link>
-        </button>
       </div>
     </div>
   );

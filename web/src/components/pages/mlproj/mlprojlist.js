@@ -6,6 +6,7 @@ export const MLFilterSkills = [
   "Tensorflow",
   "Seaborn",
   "Panda",
+  "Torch",
 ];
 
 export const MLProjList = [

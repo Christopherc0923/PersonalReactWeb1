@@ -10,7 +10,11 @@ export default function Leetcode() {
   };
 
   return (
-    <div>
+    <div
+      className="container-fluid spacer layer3"
+      style={{ margin: "0px", minHeight: "100vh" }}
+      id="dark"
+    >
       <LForm addData={addData} />
       <Table data={data} />
     </div>

@@ -30,7 +30,8 @@ const IntersectionObserverComponent = ({ children }) => {
   }, []);
 
   const containerStyle = {
-    height: "100vh",
+    height: "auto",
+    minHeight: "75vh",
     opacity: isVisible ? 1 : 0,
     transform: `translateY(${isVisible ? "0" : "20px"})`,
     transition: "all 3s",

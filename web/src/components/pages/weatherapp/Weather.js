@@ -84,7 +84,11 @@ export default function Weather() {
   }, [forecast]);
 
   return (
-    <div className="container">
+    <div
+      className="container-fluid spacer layer3"
+      style={{ margin: "0px", minHeight: "100vh" }}
+      id="dark"
+    >
       <br />
       <h2>Weather Forecast {zip ? `for ${city.name}, ${zip}` : ""}</h2>
       <br />

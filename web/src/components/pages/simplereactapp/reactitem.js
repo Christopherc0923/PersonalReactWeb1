@@ -5,10 +5,10 @@ export default function ReactItem(props) {
   const { title, description, skills, img, page, url, isExternal } = props.data;
 
   return (
-    <div className="container">
+    <div className="container-fluid spacer layer3" style={{ padding: "0px" }}>
       <hr />
       <div classname="row container">
-        <h3>
+        <h3 className="" style={{ marginLeft: "30px" }}>
           {isExternal === "true" ? (
             <a
               href={url}
@@ -19,7 +19,11 @@ export default function ReactItem(props) {
               {title}
             </a>
           ) : (
-            <Link to={`/${page}`} className="nav-link">
+            <Link
+              to={`/${page}`}
+              className="text-light
+            "
+            >
               {title}
             </Link>
           )}
@@ -29,9 +33,9 @@ export default function ReactItem(props) {
       <div className="row container">
         <div
           className="container d-flex align-items-center justify-content-center image-container col-lg-6"
-          style={{ height: "300px" }}
+          style={{ height: "auto", minHeight: "300px" }}
         >
-          <Link to={`/${page}`} className="nav-link">
+          <Link to={`/${page}`} className="nav-link ">
             <img
               src={img}
               alt={title}

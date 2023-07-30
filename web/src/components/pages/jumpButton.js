@@ -10,7 +10,7 @@ export default function JumpButton({ targetElementId, buttonText }) {
 
   return (
     <button
-      className="btn btn-outline-primary"
+      className="btn btn-dark"
       style={{ margin: "5px", width: "135px" }}
       onClick={handleClick}
     >

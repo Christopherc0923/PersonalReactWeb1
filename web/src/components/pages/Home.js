@@ -36,7 +36,7 @@ export default function About() {
         <div
           className="container-fluid spacer layer2"
           id="Intro"
-          style={{ padding: "0" }}
+          style={{ padding: "0", minHeight: "100vh" }}
         >
           <IntersectionObserverComponent>
             <div
@@ -53,7 +53,7 @@ export default function About() {
               </p>
               <div className="container-fluid text-center">
                 <button
-                  className="btn btn-outline-primary"
+                  className="btn btn-dark"
                   style={{ margin: "3px", width: "135px" }}
                 >
                   <Link to="/about" className="no-color">
@@ -61,7 +61,7 @@ export default function About() {
                   </Link>
                 </button>
 
-                <JumpButton targetElementId="jump" buttonText="Contact Me" />
+                <JumpButton targetElementId="Contact" buttonText="Contact Me" />
               </div>
             </div>
           </IntersectionObserverComponent>
@@ -77,7 +77,11 @@ export default function About() {
         </div>
 
         {/* Personal Projects */}
-        <div className="spacer layer2" id="Projs">
+        <div
+          className="spacer layer2 d-flex align-items-center justify-content-center"
+          id="Projs"
+          style={{ padding: "0", minHeight: "125vh" }}
+        >
           <IntersectionObserverComponent>
             <div className="container-fluid">
               <Project />
@@ -95,7 +99,11 @@ export default function About() {
         </div>
 
         {/* Contact Me */}
-        <div className="spacer layer2" id="Contact">
+        <div
+          className="spacer layer2 d-flex align-items-center"
+          id="Contact"
+          style={{ padding: "0", minHeight: "100vh" }}
+        >
           <IntersectionObserverComponent>
             <div className="container-fluid d-flex align-items-center justify-content-center text-center">
               <Contact />

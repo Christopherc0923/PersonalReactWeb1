@@ -14,7 +14,11 @@ export default function Expense() {
   };
 
   return (
-    <div>
+    <div
+      className="container-fluid spacer layer3"
+      style={{ margin: "0px" }}
+      id="dark"
+    >
       <ExpenseForm addExpense={addExpense} />
       <ExpenseTable expense={expense} />
       <ExpenseChart expense={expense} />

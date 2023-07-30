@@ -12,3 +12,15 @@
 .layer2 {
   background-image: url(./wave2.svg);
 }
+
+.layer3 {
+  background-image: url(./wave3.svg);
+}
+
+.dark {
+  color: white;
+}
+
+#dark {
+  color: white;
+}
