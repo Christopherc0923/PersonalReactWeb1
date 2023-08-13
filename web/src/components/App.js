@@ -19,6 +19,7 @@ import WebsiteRestructure from "./pages/intelproj/websiteRestructure";
 import AbortML from "./pages/intelproj/abortML";
 import SimpleReactApp from "./pages/simplereactapp/simplereactapp";
 import MLProj from "./pages/mlproj/mlproj";
+import WebDetail from "./pages/projectshowcase/WebDetail";
 
 export default function App() {
   let current = "home";
@@ -43,6 +44,7 @@ export default function App() {
           <Route path="/SimpleReactApp" element={<SimpleReactApp />} />
           <Route path="/MLProj" element={<MLProj />} />
           <Route path="/PersonalReactWeb1" element={<Home />} />
+          <Route path="/Detail" element={<WebDetail />} />
         </Routes>
       </div>
       <BackToTop />

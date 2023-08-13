@@ -33,7 +33,7 @@ export default function Footer() {
 
             <div className="col-md-3">
               <h6>Quick Links</h6>
-              <ul className="footer-links">
+              <ul className="footer-links list-unstyled">
                 <li>
                   <a href="https://www.linkedin.com/in/chan-christopher-/">
                     LinkedIn

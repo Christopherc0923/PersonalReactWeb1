@@ -10,11 +10,18 @@ export default function WebsiteRestructure() {
         <h2>Intel Module Website Restructure</h2>
       </div>
 
-      <div className="container m-2 text-center">
-        <img src="ModuleRestructure.png" style={{ width: "90%" }} />
+      <div className="container-fluid  d-flex justify-content-center">
+        <img
+          className=""
+          src="ModuleRestructure.png"
+          style={{ maxHeight: "500px" }}
+        />
       </div>
 
-      <div className="container-fluid" style={{ width: "60%" }}>
+      <div
+        className="container-fluid justify-content-center"
+        style={{ width: "60%" }}
+      >
         <h4 className="text-center"> Objective </h4>
         <p style={tabStyle}>
           I played a crucial role in the design and development of a new website

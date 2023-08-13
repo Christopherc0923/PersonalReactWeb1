@@ -37,7 +37,7 @@ export default function Project() {
             </div>
           ))}
         </div>
-        <div className="col-sm-1 p-1">
+        <div className="col-sm-1 p-1 d-flex justify-content-center align-items-center">
           <a
             class="carousel-control-next "
             href="#projectCarousel"
@@ -48,7 +48,7 @@ export default function Project() {
               class="carousel-control-next-icon bg-dark"
               aria-hidden="true"
             ></span>
-            <span class="sr-only">Next</span>
+            <span class="sr-only"></span>
           </a>
         </div>
       </div>

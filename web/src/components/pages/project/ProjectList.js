@@ -29,6 +29,7 @@ export const ProjectList = [
     url: "https://christopherc0923.github.io/React-Projs/",
     isExternal: "true",
   },
+
   {
     title: "Intel Module Website Restructure",
     description:
@@ -38,6 +39,15 @@ export const ProjectList = [
     page: "IntelModuleWeb",
     url: "",
     isExternal: "false",
+  },
+  {
+    title: "RecipeBook Website",
+    description: "Placeholder",
+    skill: "Bootstrap, HTML/CSS, JavaScript, ReactJS, Express, NodeJS, API",
+    img: "recipeappelogo.jpg",
+    page: "",
+    url: "https://christopherc0923.github.io/RecipeApp",
+    isExternal: "true",
   },
   {
     title: "Intel Abort Classification Model",

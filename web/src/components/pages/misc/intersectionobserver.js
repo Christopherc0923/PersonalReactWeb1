@@ -36,6 +36,7 @@ const IntersectionObserverComponent = ({ children }) => {
     transform: `translateY(${isVisible ? "0" : "20px"})`,
     transition: "all 3s",
     padding: "0",
+    margin: "0",
   };
 
   return (

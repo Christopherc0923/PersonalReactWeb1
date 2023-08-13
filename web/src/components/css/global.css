@@ -40,7 +40,7 @@
   margin-top: 125px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
   #appMargin {
     margin-top: 50px; /* Height for smaller screens */
   }

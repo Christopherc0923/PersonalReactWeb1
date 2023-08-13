@@ -74,6 +74,13 @@ export default function Nav() {
                   </Link>
                 </li>
 
+                <li className="nav-item">
+                  <Link to="/detail" className="nav-link">
+                    Web Detail
+                  </Link>
+                </li>
+
+                {/* Simple React Projects*/}
                 <li
                   className="nav-item dropdown"
                   onMouseEnter={handleMouseEnter1}
@@ -119,6 +126,7 @@ export default function Nav() {
                   </div>
                 </li>
 
+                {/* Machine Learning Projects*/}
                 <li
                   className="nav-item dropdown"
                   onMouseEnter={handleMouseEnter2}
