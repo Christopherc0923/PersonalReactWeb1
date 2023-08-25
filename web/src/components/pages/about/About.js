@@ -10,8 +10,8 @@ export default function About() {
 
   return (
     <div
-      className="container-fluid text-center spacer layer2"
-      style={{ padding: "0px" }}
+      className="container-fluid text-center spacer layer5"
+      style={{ padding: "0px", minHeight: "120vh" }}
     >
       <div style={{ paddingTop: "20px" }}>
         <h2>My Resume</h2>

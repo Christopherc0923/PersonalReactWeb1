@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
+import { Routes, Route, HashRouter, Navigate } from "react-router-dom";
 
 import About from "./pages/about/About";
 import Contact from "./pages/contactform/Contact";
@@ -25,9 +25,13 @@ export default function App() {
   let current = "home";
 
   return (
-    <BrowserRouter basename="/PersonalReactWeb1">
+    <HashRouter basename="/">
       <Nav />
-      <div id="appMargin" className="container-fluid" style={{ padding: "0" }}>
+      <div
+        id="appMargin"
+        className="container-fluid"
+        style={{ padding: "0", margin: "0" }}
+      >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
@@ -51,6 +55,6 @@ export default function App() {
       <div style={{ padding: "0", backgroundColor: "#e1e1e1" }}>
         <Footer />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }

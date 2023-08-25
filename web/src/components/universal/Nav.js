@@ -70,7 +70,7 @@ export default function Nav() {
                 </li>
                 <li className="nav-item">
                   <Link to="/about" className="nav-link">
-                    About
+                    About Me
                   </Link>
                 </li>
 

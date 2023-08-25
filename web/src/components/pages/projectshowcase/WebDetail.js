@@ -9,7 +9,7 @@ function WebDetail() {
       style={{
         margin: "0px",
         padding: "0px",
-        minHeight: "140vh",
+        minHeight: "150vh",
         background: "",
         color: "white",
         marginTop: "50px",
@@ -87,13 +87,26 @@ function WebDetail() {
             <h2 className="text-center p-3">Key Features</h2>
             <ul>
               <li>
-                Feature 1: Describe the first key feature of your project.
+                <strong>Responsive Design for Any Device:</strong> Experience a
+                website designed to fit your screen, whether it's a desktop
+                monitor, tablet, or smartphone. Our site's responsive design
+                ensures a consistent and comfortable browsing experience across
+                different devices.
               </li>
               <li>
-                Feature 2: Describe the second key feature of your project.
+                <strong>Component-Driven Interactivity:</strong> Navigate
+                through a web structure built on React's component-based
+                approach. From interactive forms to animated transitions, each
+                piece is designed as a modular unit, resulting in a smooth and
+                interactive interface that adapts to your actions.
               </li>
               <li>
-                Feature 3: Describe the third key feature of your project.
+                <strong>Enhanced User Engagement:</strong> Immerse yourself in
+                an online journey that emphasizes interaction. Our website is
+                more than just information – it's a dynamic experience. Engage
+                with captivating visuals, effortless navigation, and a user
+                interface that responds to your clicks and input. Explore the
+                possibilities of an engaging and interactive web environment.
               </li>
             </ul>
           </section>

@@ -9,10 +9,10 @@ export default function Footer() {
     };
   });
   return (
-    <div className="container text-center">
+    <div className="container=fluid text-center">
       <footer className="site-footer footer mt-auto py-3">
         <hr />
-        <div className="container text-center">
+        <div className="text-center">
           <div className="row">
             <div className="col-md-3 text-center">
               <h3>Current Time:</h3>
@@ -33,8 +33,8 @@ export default function Footer() {
 
             <div className="col-md-3">
               <h6>Quick Links</h6>
-              <ul className="footer-links list-unstyled">
-                <li>
+              <ul className="footer-links list-unstyled ">
+                <li className="">
                   <a href="https://www.linkedin.com/in/chan-christopher-/">
                     LinkedIn
                   </a>

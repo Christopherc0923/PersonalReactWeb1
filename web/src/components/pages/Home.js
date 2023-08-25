@@ -47,9 +47,10 @@ export default function About() {
 
               <h3 className="m-1">I'm Christopher Chan</h3>
               <h3 className="m-1">Process Engineer at Intel</h3>
-              <p className="m-1">
-                I am open to opportunities in data science and backend software
-                development
+              <p className="m-3">
+                I am looking for an exciting opportunities in{" "}
+                <strong>data science</strong> and{" "}
+                <strong>full-stack development</strong>
               </p>
               <div className="container-fluid text-center">
                 <button
