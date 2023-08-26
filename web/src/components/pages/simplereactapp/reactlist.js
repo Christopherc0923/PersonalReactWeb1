@@ -88,4 +88,26 @@ export const ReactList = [
     url: "",
     isExternal: "false",
   },
+  {
+    id: 5,
+    title: "Multiple Webviewer App",
+    description:
+      "The website aims to solve a problem at work where multiple websites are loaded on the same page. The website is loaded by clicking the checkbox from data tabulated on the top of the page. This enables ability to quickly load desired pages to increase job productivity. ",
+    skills: ["Bootstrap", "HTML", "CSS", "ReactJS", "JavaScript"],
+    img: "",
+    page: "",
+    url: "",
+    isExternal: "true",
+  },
+  {
+    id: 5,
+    title: "RecipeBook App",
+    description:
+      "The website aims to solve a hungry person's inability to decide on a cuisine to make by providing multiple categories and options. By offering a diverse array of culinary inspirations, users can easily browse through a wide range of choices. This user-friendly platform will help them explore various cuisines, dishes, and recipes, each accompanied by detailed descriptions and images. Users can filter their preferences based on ingredients, cooking time, complexity, and dietary restrictions, making the decision-making process smoother.",
+    skills: ["Bootstrap", "HTML", "CSS", "ReactJS", "JavaScript"],
+    img: "",
+    page: "",
+    url: "",
+    isExternal: "true",
+  },
 ];

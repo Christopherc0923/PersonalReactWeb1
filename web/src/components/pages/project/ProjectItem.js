@@ -18,7 +18,7 @@ export default function ProjectItem(props) {
     <div className="container-fluid" style={itemStyle}>
       <div className="container d-flex flex-column h-100 text-center">
         <h3
-          className="flex-fill  d-flex align-items-center justify-content-center"
+          className="flex-fill d-flex align-items-center justify-content-center"
           style={{ minHeight: "80px" }}
         >
           {isExternal === "true" ? (

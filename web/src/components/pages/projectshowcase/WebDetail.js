@@ -4,15 +4,13 @@ import Symbol from "./symbol";
 function WebDetail() {
   return (
     <div
-      className="container-fluid spacer layer5"
+      className="container-fluid spacer layer5 w-100"
       id="content"
       style={{
         margin: "0px",
         padding: "0px",
-        minHeight: "150vh",
-        background: "",
+        minHeight: "180vh",
         color: "white",
-        marginTop: "50px",
       }}
     >
       <div className="">
@@ -85,7 +83,7 @@ function WebDetail() {
         <div className="container">
           <section className="features">
             <h2 className="text-center p-3">Key Features</h2>
-            <ul>
+            <ul className="m-0">
               <li>
                 <strong>Responsive Design for Any Device:</strong> Experience a
                 website designed to fit your screen, whether it's a desktop

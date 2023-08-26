@@ -1,15 +1,32 @@
 export const MLFilterSkills = [
   "Regression",
   "Classification",
-  "SKlearn",
+  "SKLearn",
   "Keras",
   "Tensorflow",
   "Seaborn",
-  "Panda",
-  "Torch",
+  "Pandas",
+  "PyTorch",
 ];
 
 export const MLProjList = [
+  {
+    id: 0,
+    title: "Rocket Launch Success Predictor",
+    description: "",
+    skills: [
+      "Regression",
+      "Classification",
+      "SKlearn",
+      "API",
+      "Pandas",
+      "Seaborn",
+    ],
+    img: "IBMDS.png",
+    page: "Expense",
+    url: "",
+    isExternal: "false",
+  },
   {
     id: 1,
     title: "Heart Attack Classification",

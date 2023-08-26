@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./App.css";
 import { Routes, Route, HashRouter, Navigate } from "react-router-dom";
 
 import About from "./pages/about/About";
@@ -26,12 +26,13 @@ export default function App() {
 
   return (
     <HashRouter basename="/">
-      <Nav />
       <div
         id="appMargin"
-        className="container-fluid"
-        style={{ padding: "0", margin: "0" }}
+        className="container-fluid m-0 p-0 "
+        style={{ width: "100%" }}
       >
+        <Nav />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
@@ -51,10 +52,14 @@ export default function App() {
           <Route path="/Detail" element={<WebDetail />} />
         </Routes>
       </div>
-      <BackToTop />
-      <div style={{ padding: "0", backgroundColor: "#e1e1e1" }}>
+
+      <div
+        className="container-fluid m-0 py-3"
+        style={{ backgroundColor: "#e1e1e1" }}
+      >
         <Footer />
       </div>
+      <BackToTop />
     </HashRouter>
   );
 }

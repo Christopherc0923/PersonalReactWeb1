@@ -5,7 +5,7 @@ import ReactFilter from "./reactFilter";
 export default function SimpleReactApp() {
   return (
     <div
-      className="container-fluid spacer layer3"
+      className="container-fluid spacer layer5"
       style={{ padding: "0px" }}
       id="dark"
     >

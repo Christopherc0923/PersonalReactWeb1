@@ -8,6 +8,9 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
+import { ReactList } from "../pages/simplereactapp/reactlist";
+import { MLProjList } from "../pages/mlproj/mlprojlist";
+
 export default function Nav() {
   {
     /*
@@ -38,14 +41,14 @@ export default function Nav() {
   };
 
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+    <div className="navAdj">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top m-0 p-2">
         <div className="row container-fluid text-center ">
-          <div className="col-lg-2">
+          <div className="col-lg-auto">
             <h4 className="text-light">Personal Web</h4>
           </div>
 
-          <div className="col-lg-8">
+          <div className="col-lg-8 m-0 p-0">
             <button
               className="navbar-toggler justify-content-center"
               type="button"
@@ -96,33 +99,20 @@ export default function Nav() {
                     aria-expanded={isOpen1 ? "true" : "false"}
                   >
                     <Link to="/SimpleReactApp" className="no-color">
-                      Simple React Apps
+                      React Apps
                     </Link>
                   </a>
                   <div
                     className={`dropdown-menu ${isOpen1 ? "show" : ""}`}
                     aria-labelledby="navbarDropdown"
                   >
-                    <a className="dropdown-item" href="#">
-                      <Link to="/Expense" className="no-color">
-                        Expense Tracker
-                      </Link>
-                    </a>
-                    <a className="dropdown-item" href="#">
-                      <Link to="/Leetcode" className="no-color">
-                        LeetCode Tracker
-                      </Link>
-                    </a>
-                    <a className="dropdown-item" href="#">
-                      <Link to="/Weather" className="no-color">
-                        Weather App
-                      </Link>
-                    </a>
-                    <a className="dropdown-item" href="#">
-                      <Link to="/stockEarnings" className="no-color">
-                        Stock App
-                      </Link>
-                    </a>
+                    {ReactList.map((item) => (
+                      <a className="dropdown-item" href="#">
+                        <Link to={`/${item.page}`} className="no-color">
+                          {item.title}
+                        </Link>
+                      </a>
+                    ))}
                   </div>
                 </li>
 
@@ -149,21 +139,13 @@ export default function Nav() {
                     className={`dropdown-menu ${isOpen2 ? "show" : ""}`}
                     aria-labelledby="navbarDropdown"
                   >
-                    <a className="dropdown-item" href="#">
-                      <Link to="/MLProj" className="no-color">
-                        ML Proj 1
-                      </Link>
-                    </a>
-                    <a className="dropdown-item" href="#">
-                      <Link to="/MLProj" className="no-color">
-                        ML Proj 1
-                      </Link>
-                    </a>
-                    <a className="dropdown-item" href="#">
-                      <Link to="/MLProj" className="no-color">
-                        ML Proj 1
-                      </Link>
-                    </a>
+                    {MLProjList.map((item) => (
+                      <a className="dropdown-item" href="#">
+                        <Link to={`/${item.page}`} className="no-color">
+                          {item.title}
+                        </Link>
+                      </a>
+                    ))}
                   </div>
                 </li>
               </ul>
@@ -171,7 +153,7 @@ export default function Nav() {
           </div>
 
           <div
-            className="col-lg-2 text-center justify-content-end m-2"
+            className="col-lg-auto text-center justify-content-end"
             id="collapseNav"
           >
             <a

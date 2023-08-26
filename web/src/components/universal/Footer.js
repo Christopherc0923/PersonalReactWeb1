@@ -9,8 +9,8 @@ export default function Footer() {
     };
   });
   return (
-    <div className="container=fluid text-center">
-      <footer className="site-footer footer mt-auto py-3">
+    <div className="container-fluid text-center">
+      <footer className="site-footer footer">
         <hr />
         <div className="text-center">
           <div className="row">

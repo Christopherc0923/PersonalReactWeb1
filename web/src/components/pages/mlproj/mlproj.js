@@ -5,8 +5,11 @@ import MLProjFilter from "./mlprojfilter";
 
 export default function MLProj() {
   return (
-    <div className="container-fluid spacer layer2" style={{ padding: "0px" }}>
-      <div className="header" style={{ padding: "20px" }}>
+    <div
+      className="container-fluid spacer layer5 text-light m-0 p-0"
+      style={{ minHeight: "100vh" }}
+    >
+      <div className="container-fluid" style={{}}>
         <h1 className="text-center">Machine Learning Projects</h1>
       </div>
 
@@ -18,7 +21,9 @@ export default function MLProj() {
         </p>
       </div>
 
-      <MLProjFilter />
+      <div className="container-fluid">
+        <MLProjFilter />
+      </div>
     </div>
   );
 }

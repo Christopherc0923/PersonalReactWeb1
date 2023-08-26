@@ -5,7 +5,7 @@ export default function MLProjItem(props) {
   const { title, description, skills, img, page, url, isExternal } = props.data;
 
   return (
-    <div className="container">
+    <div className="container-fluid">
       <hr />
       <div classname="row container">
         <h3>
@@ -41,7 +41,7 @@ export default function MLProjItem(props) {
           </Link>
         </div>
 
-        <div className="col-lg-6 d-flex flex-column justify-content-center">
+        <div className="col-lg-6 d-flex flex-column justify-content-center text-light">
           <h5> Objective </h5>
           <p className="text-justify">{description.slice(0, 0)}</p>
           <h5> Skills </h5>

@@ -5,7 +5,7 @@ export default function ReactItem(props) {
   const { title, description, skills, img, page, url, isExternal } = props.data;
 
   return (
-    <div className="container-fluid spacer layer3" style={{ padding: "0px" }}>
+    <div className="container-fluid" style={{ padding: "0px" }}>
       <hr />
       <div classname="row container">
         <h3 className="" style={{ marginLeft: "30px" }}>
@@ -14,7 +14,7 @@ export default function ReactItem(props) {
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className="nav-link"
+              className="nav-link text-light"
             >
               {title}
             </a>
