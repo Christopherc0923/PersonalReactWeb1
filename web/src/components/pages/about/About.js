@@ -27,7 +27,7 @@ export default function About() {
       <div style={{ padding: "20px" }}>
         <Document
           className="d-flex justify-content-center"
-          file="Resume.pdf"
+          file="./Resume.pdf"
           onLoadError={(error) =>
             console.error("Error while loading PDF:", error)
           }

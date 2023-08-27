@@ -45,14 +45,15 @@ export default function ReactItem(props) {
           </Link>
         </div>
 
-        <div className="col-lg-6 d-flex flex-column justify-content-center">
-          <h5> Objective </h5>
+        <div className="container-fluid w-100 col-lg-6 d-flex flex-column justify-content-center align-items-center text-light min-vh-100">
+          <h3> Objective </h3>
           <p className="text-justify">{description.slice(0, 300)}</p>
-          <h5> Skills </h5>
-
-          {skills.map((skill) => (
-            <li>{skill}</li>
-          ))}
+          <h3> Skills </h3>
+          <ul className="list-unstyled" style={{ textAlign: "center" }}>
+            {skills.map((skill) => (
+              <li>{skill}</li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>

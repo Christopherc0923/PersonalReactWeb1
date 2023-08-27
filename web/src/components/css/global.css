@@ -65,3 +65,13 @@
     padding-bottom: 148px;
   }
 }
+
+#skillList h5 {
+  height: 64px;
+}
+
+@media screen and (max-width: 992px) {
+  #skillList h5 {
+    height: 32px;
+  }
+}

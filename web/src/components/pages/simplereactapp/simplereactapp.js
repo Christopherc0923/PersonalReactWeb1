@@ -22,7 +22,7 @@ export default function SimpleReactApp() {
         </p>
       </div>
 
-      <div>
+      <div className="container w-100">
         <ReactFilter />
       </div>
     </div>

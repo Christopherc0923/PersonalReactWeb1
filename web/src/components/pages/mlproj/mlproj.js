@@ -21,7 +21,7 @@ export default function MLProj() {
         </p>
       </div>
 
-      <div className="container-fluid">
+      <div className="container w-100">
         <MLProjFilter />
       </div>
     </div>

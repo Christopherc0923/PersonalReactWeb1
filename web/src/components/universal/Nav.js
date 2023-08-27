@@ -43,9 +43,9 @@ export default function Nav() {
   return (
     <div className="navAdj">
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top m-0 p-2">
-        <div className="row container-fluid text-center ">
+        <div className="row container-fluid text-center m-0 p-0">
           <div className="col-lg-auto">
-            <h4 className="text-light">Personal Web</h4>
+            <h4 className="text-light">Christopher Chan</h4>
           </div>
 
           <div className="col-lg-8 m-0 p-0">
@@ -157,7 +157,7 @@ export default function Nav() {
             id="collapseNav"
           >
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/chan-christopher-/"
               target="_blank"
               rel="noopener noreferrer"
               class="m-2 navIcon"
@@ -165,7 +165,7 @@ export default function Nav() {
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <a
-              href="https://github.com/"
+              href="https://github.com/Christopherc0923"
               target="_blank"
               rel="noopener noreferrer"
               class="m-2 navIcon"

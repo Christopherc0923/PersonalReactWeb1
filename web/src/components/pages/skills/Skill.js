@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../../css/global.css";
 import SkillList from "./SkillList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -29,7 +29,7 @@ export default function Skill() {
       <div className="row">
         <h3 className="text-center m-5">Skills</h3>
       </div>
-      <div className="container row ">
+      <div className="container row " id="skillList">
         <div className="col-lg-3">
           <div className="row d-flex justify-content-center">
             <h5>Programming Languages</h5>
