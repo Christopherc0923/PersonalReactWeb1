@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import { Document, Page, pdfjs } from "react-pdf";
+import { Document, pdfjs, Page } from "react-pdf";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 export default function IBM() {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
+  const pdfPath = process.env.PUBLIC_URL + "/IBMppt.pdf";
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
@@ -21,7 +23,7 @@ export default function IBM() {
       </div>
       <div className="container" style={{ height: "800px" }}>
         <Document
-          file="IBMppt.pdf"
+          file={pdfPath}
           onLoadSuccess={onDocumentLoadSuccess}
           onLoadError={(error) =>
             console.error("Error while loading PDF:", error)

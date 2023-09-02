@@ -50,14 +50,16 @@ export const ProjectList = [
     isExternal: "true",
   },
   {
-    title: "Intel Abort Classification Model",
-    description: "In Progress",
-    skill: "Python, SQL, TOAD",
-    img: "intel.png",
-    page: "IntelAbortML",
+    title: "Web View",
+    description: "",
+    skill:
+      "Python, SQL, TOAD, HTML, CSS, Bootstrap, PowerBI, JavaScript, ReactJS",
+    img: "",
+    page: "WebView",
     url: "",
     isExternal: "false",
   },
+
   {
     title: "Google Data Analytics Case Study",
     description:
@@ -67,5 +69,14 @@ export const ProjectList = [
     page: "",
     url: "https://www.google.com",
     isExternal: "true",
+  },
+  {
+    title: "Intel Abort Classification Model",
+    description: "In Progress",
+    skill: "Python, SQL, TOAD",
+    img: "intel.png",
+    page: "IntelAbortML",
+    url: "",
+    isExternal: "false",
   },
 ];

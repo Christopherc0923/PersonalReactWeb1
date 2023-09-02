@@ -1,12 +1,14 @@
 import "../../css/background.css";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Document, Page, pdfjs } from "react-pdf";
+import { Document, pdfjs, Page } from "react-pdf";
 import DownloadButton from "./Download";
+
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 export default function About() {
   const pgheight = 1000;
+  const pdfPath = process.env.PUBLIC_URL + "/Resume.pdf";
 
   return (
     <div
@@ -14,7 +16,7 @@ export default function About() {
       style={{ padding: "0px", minHeight: "120vh" }}
     >
       <div style={{ paddingTop: "20px" }}>
-        <h2>My Resume</h2>
+        <h2 className="text-light">My Resume</h2>
       </div>
       <div className="container-fluid" style={{ padding: "20px" }}>
         <DownloadButton />
@@ -27,7 +29,7 @@ export default function About() {
       <div style={{ padding: "20px" }}>
         <Document
           className="d-flex justify-content-center"
-          file="./Resume.pdf"
+          file={pdfPath}
           onLoadError={(error) =>
             console.error("Error while loading PDF:", error)
           }

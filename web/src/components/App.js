@@ -20,6 +20,7 @@ import AbortML from "./pages/intelproj/abortML";
 import SimpleReactApp from "./pages/simplereactapp/simplereactapp";
 import MLProj from "./pages/mlproj/mlproj";
 import WebDetail from "./pages/projectshowcase/WebDetail";
+import WebView from "./pages/webview/WebView";
 
 export default function App() {
   let current = "home";
@@ -50,6 +51,7 @@ export default function App() {
           <Route path="/MLProj" element={<MLProj />} />
           <Route path="/PersonalReactWeb1" element={<Home />} />
           <Route path="/Detail" element={<WebDetail />} />
+          <Route path="/WebView" element={<WebView />} />
         </Routes>
       </div>
 

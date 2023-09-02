@@ -13,12 +13,16 @@ import "../css/background.css";
 
 export default function About() {
   return (
-    <div className="container-fluid" style={{ padding: "0px" }}>
+    <div
+      className="container-fluid spacer layer5 text-light"
+      style={{ padding: "0px" }}
+    >
       {/* https://app.haikei.app/ change background*/}
       {/* Left Nav */}
       <div
         className="container-fluid jump-circles-container col-sm-1  h-100 position-fixed d-flex flex-column align-items-center justify-content-center"
         id="jumpNav"
+        style={{ background: "transpa" }}
       >
         <JumpNav targetElementId="Intro" />
         <JumpNav targetElementId="Skills" />
@@ -34,7 +38,7 @@ export default function About() {
         style={{ padding: "0", margin: "0" }}
       >
         <div
-          className="container-fluid spacer layer2"
+          className="container-fluid "
           id="Intro"
           style={{ padding: "0", minHeight: "100vh" }}
         >
@@ -69,7 +73,7 @@ export default function About() {
         </div>
 
         {/* Skills */}
-        <div className="spacer layer1" id="Skills">
+        <div className="" id="Skills">
           <IntersectionObserverComponent>
             <div className="container-fluid">
               <Skill />
@@ -79,7 +83,7 @@ export default function About() {
 
         {/* Personal Projects */}
         <div
-          className="spacer layer2 d-flex align-items-center justify-content-center"
+          className="d-flex align-items-center justify-content-center"
           id="Projs"
           style={{ padding: "0", minHeight: "125vh" }}
         >
@@ -91,7 +95,7 @@ export default function About() {
         </div>
 
         {/* Certification */}
-        <div className="spacer layer1" id="Cert">
+        <div className="" id="Cert">
           <IntersectionObserverComponent>
             <div className="container-fluid">
               <Cert />
@@ -101,7 +105,7 @@ export default function About() {
 
         {/* Contact Me */}
         <div
-          className="spacer layer2 d-flex align-items-center"
+          className="spacer layer5 d-flex align-items-center text-light"
           id="Contact"
           style={{ padding: "0", minHeight: "100vh" }}
         >

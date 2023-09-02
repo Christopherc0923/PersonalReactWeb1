@@ -42,9 +42,9 @@ export default function Nav() {
 
   return (
     <div className="navAdj">
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top m-0 p-2">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top m-0 p-2 ">
         <div className="row container-fluid text-center m-0 p-0">
-          <div className="col-lg-auto">
+          <div className="col-lg-auto text-lg-center">
             <h4 className="text-light">Christopher Chan</h4>
           </div>
 
@@ -73,13 +73,7 @@ export default function Nav() {
                 </li>
                 <li className="nav-item">
                   <Link to="/about" className="nav-link">
-                    About Me
-                  </Link>
-                </li>
-
-                <li className="nav-item">
-                  <Link to="/detail" className="nav-link">
-                    Web Detail
+                    Resume
                   </Link>
                 </li>
 
@@ -148,10 +142,17 @@ export default function Nav() {
                     ))}
                   </div>
                 </li>
+
+                <li className="nav-item">
+                  <Link to="/detail" className="nav-link">
+                    About Page
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
 
+          {/* Icons */}
           <div
             className="col-lg-auto text-center justify-content-end"
             id="collapseNav"

@@ -27,7 +27,7 @@ export default function BackToTop() {
     <div>
       {showButton && (
         <a href="#" id="back-to-top" title="Back to top" onClick={scrollToTop}>
-          <FontAwesomeIcon icon={faArrowUp} />
+          <FontAwesomeIcon icon={faArrowUp} style={{ color: "orange" }} />
         </a>
       )}
     </div>
