@@ -107,7 +107,7 @@ export const ReactList = [
     skills: ["Bootstrap", "HTML", "CSS", "ReactJS", "JavaScript"],
     img: "",
     page: "",
-    url: "",
+    url: "https://christopherc0923.github.io/RecipeApp/",
     isExternal: "true",
   },
 ];

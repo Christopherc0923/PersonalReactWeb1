@@ -45,7 +45,7 @@ export const MLProjList = [
       "This capstone project aims to use various machine learning models to predict the likelihood of a successful landing for SpaceX's Falcon 9 launch. ",
     skills: ["Regression", "Classification", "SKlearn"],
     img: "Leetcode.png",
-    page: "Leetcode",
+    page: "",
     url: "",
     isExternal: "false",
   },

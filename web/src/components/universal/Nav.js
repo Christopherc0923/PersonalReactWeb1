@@ -102,9 +102,20 @@ export default function Nav() {
                   >
                     {ReactList.map((item) => (
                       <a className="dropdown-item" href="#">
-                        <Link to={`/${item.page}`} className="no-color">
-                          {item.title}
-                        </Link>
+                        {item.isExternal === "true" ? (
+                          <a
+                            href={item.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="no-color"
+                          >
+                            {item.title}
+                          </a>
+                        ) : (
+                          <Link to={`/${item.page}`} className="no-color">
+                            {item.title}
+                          </Link>
+                        )}
                       </a>
                     ))}
                   </div>
